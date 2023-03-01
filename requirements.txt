@@ -1,0 +1,3 @@
+pexelsPy==1.0.1
+requests==2.27.1
+tqdm==4.64.1
