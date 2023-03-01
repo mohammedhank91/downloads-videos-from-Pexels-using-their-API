@@ -13,7 +13,7 @@ This Python script downloads videos from Pexels and shows a progress bar for eac
 
 1. Clone this repository to your local machine or download the ZIP file and extract it.
 2. Install the required libraries by running `pip install -r requirements.txt`.
-3. Replace `PEXELS_API` variable with your own API key from Pexels.
+3. Replace `PEXELS_API` variable with your own API key from [Pexels](https://www.pexels.com/api/).
 
 ## Usage
 
