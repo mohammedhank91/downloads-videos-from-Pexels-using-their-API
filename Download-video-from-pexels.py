@@ -4,7 +4,7 @@ from tqdm import tqdm  # Import the tqdm library for showing download progress
 import os  # Import the os library for working with file paths and directories
 
 # Set up the Pexels API client
-PEXELS_API = 'ai-key'
+PEXELS_API = 'api-key'
 api = pexelsPy.API(PEXELS_API)
 
 # Search for videos on Pexels and retrieve the search results
