@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Complete</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pexels Video Downloader</a>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h2>Download Complete!</h2>
+                <p>Your videos have been successfully downloaded.</p>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">Download More Videos</a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            &copy; 2023 Pexels Video Downloader
+        </div>
+    </footer>
+</body>
+</html>
