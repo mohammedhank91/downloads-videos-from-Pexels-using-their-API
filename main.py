@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request , session
-import pexelsPy , jsonify , requests , os 
+from flask import Flask, render_template, request , session , jsonify
+import pexelsPy  , requests , os 
 from tqdm import tqdm
 from dotenv import load_dotenv
 load_dotenv()
