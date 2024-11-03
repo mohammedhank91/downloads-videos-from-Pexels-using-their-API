@@ -18,7 +18,7 @@ This Python script downloads videos from Pexels and shows a progress bar for eac
 ## Usage
 
 1. Open a terminal and navigate to the directory where the script is saved.
-2. Run the command `python pexels_video_downloader.py`.
+2. Run the command `python main.py`.
 3. The script will download the videos and show a progress bar for each video in the terminal.
 4. The downloaded videos will be saved in a new folder called `pexels_video`.
 
