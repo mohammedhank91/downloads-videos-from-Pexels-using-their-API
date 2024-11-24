@@ -42,8 +42,9 @@
         </div>
     </footer>
 </body>
+
 <!-- JavaScript code -->
-<script>
+<!-- <script>
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
         document.getElementById('progress-container').style.display = 'block';
@@ -66,14 +67,22 @@
                     document.getElementById('progress-bar').setAttribute('aria-valuenow', progress);
 
                     if (progress < 100) {
-                        setTimeout(updateProgress, 1000);
+                        setTimeout(updateProgress, 1000); // Poll again in 1 second
                     } else {
-                        window.location.href = '{{ url_for("download_complete") }}';
+                        // Ensure server reports completion before redirecting
+                        fetch('{{ url_for("progress") }}')
+                            .then(response => response.json())
+                            .then(finalCheck => {
+                                if (finalCheck.progress === 100) {
+                                    window.location.href = '{{ url_for("download_complete") }}';
+                                }
+                            });
                     }
                 });
         }
 
         updateProgress();
     });
-</script>
+</script> -->
+
 </html>

@@ -3,3 +3,4 @@ pexelsPy==1.0.1
 python-dotenv==1.0.0
 requests==2.27.1
 tqdm==4.64.1
+Werkzeug==2.2.2
